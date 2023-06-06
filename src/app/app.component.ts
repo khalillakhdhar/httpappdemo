@@ -24,15 +24,18 @@ let todo=new Todo();
 todo.completed=false;
 todo.title="test1";
 todo.userId=4;
-this.api.createTodo(todo);
-console.log("created",todo);
+this.api.createTodo(todo).subscribe((data)=>
+{
+  console.log(data);
+});
+//console.log("created",todo);
 
 }
 deletetodo()
 {
   this.api.deletTodoByid(4).subscribe(data=>{
 let d=data;
-console.log("deleted",data);
+console.log("deleted",d);
 
   });
 
