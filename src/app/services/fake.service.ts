@@ -21,6 +21,6 @@ url="https://jsonplaceholder.typicode.com/todos"
     return this.http.delete<Todo>(`${this.url}/${id}`);
   }
   createTodo(todo:Todo) {
-  return this.http.post<Todo[]>(this.url,todo);
+  return this.http.post<Todo>(this.url,todo);
   }
 }

@@ -14,7 +14,7 @@ export class AppComponent {
   {
     this.api.getTodos().subscribe((data)=>{
       this.todos=data;
-      console.log("liste des todo",this.todos);
+      //console.log("liste des todo",this.todos);
     })
 
   }
